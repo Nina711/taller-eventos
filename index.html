@@ -5,10 +5,11 @@
 </head>
 <body>
     <div id="holi">
-    <button type="button" id="hi" onclick="Hola()">Saludar</button>
+    <button type="button" id="hi" onclick="Hola(event)">Saludar</button>
     <script>
-        function Hola(){
+        function Hola(event){
             alert("Hola!");
+            event.stopPropagation();
         }
     </script>
     </div>
